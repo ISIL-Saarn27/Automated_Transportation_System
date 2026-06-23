@@ -1,4 +1,4 @@
-name: Test Runner
+name: Runner Diagnostics
 
 on:
   workflow_dispatch:
@@ -13,7 +13,7 @@ jobs:
         run: |
           whoami
 
-      - name: Show Python Launcher
+      - name: Show PATH
         shell: cmd
         run: |
-          py -0p
+          echo %PATH%
