@@ -11,4 +11,4 @@ jobs:
       - name: Test
         run: |
           echo Hello
-          python --version
+          py --version
