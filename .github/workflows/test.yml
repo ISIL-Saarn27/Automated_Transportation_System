@@ -1,0 +1,14 @@
+name: Test Runner
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: self-hosted
+
+    steps:
+      - name: Test
+        run: |
+          echo Hello
+          python --version
