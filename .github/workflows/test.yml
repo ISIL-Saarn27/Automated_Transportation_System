@@ -8,7 +8,8 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - name: Test
+      - name: Show User
+        shell: powershell
         run: |
-          echo Hello
-          py --version
+          whoami
+          $env:PATH
