@@ -9,7 +9,11 @@ jobs:
 
     steps:
       - name: Show User
-        shell: powershell
+        shell: cmd
         run: |
           whoami
-          $env:PATH
+
+      - name: Show Python Launcher
+        shell: cmd
+        run: |
+          py -0p
